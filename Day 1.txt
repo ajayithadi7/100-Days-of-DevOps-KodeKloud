@@ -1,0 +1,11 @@
+Day 1: Linux User Setup with Non-Interactive Shell
+
+Problem  : Create a user name  mark with a non - interactive shell on App Server 3 
+
+Solution :  
+
+
+  1. ssh username@servername ---->  securely connect to remote system over the network 
+  2. sudo -i   ---->  going to root user 
+  3. sudo useradd newusername --shell /sbin/nologin ---> createing a user with non interactive shell
+  4.cat /etc/passwd | grep newusername ---> checking either user created or not 
